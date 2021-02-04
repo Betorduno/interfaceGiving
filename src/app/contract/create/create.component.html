@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>Crear contrato</h1>
+<div mat-dialog-content>
+  <form [formGroup]="serviceForm.form" (ngSubmit)="createRegister()" class="normal-form">
+    <div class="controlers-container">
+      <mat-form-field>
+        <input formControlName="tipo_id" matInput type="number" placeholder="Tipo de id">
+        <mat-error>EL tipo de ID es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="id" matInput type="number" placeholder="ID">
+        <mat-error>EL ID es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="nombre" matInput placeholder="Nombres">
+        <mat-error>EL nombre es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="apellido" matInput placeholder="Apellidos">
+        <mat-error>EL apellido es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="edad" type="number" min="1" matInput placeholder="Edad">
+        <mat-error>La edad es requerida.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="cat" matInput placeholder="Categoria">
+        <mat-error>la categoria es requerida.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="cargo" matInput placeholder="Cargo">
+        <mat-error>El cargo es requerido.</mat-error>
+      </mat-form-field>
+      <div class="buttom-row">
+        <button mat-raised-button color="primary" type="submit" [disabled]="serviceForm.form.invalid">Crear contract</button>
+        <button mat-raised-button mat-button mat-dialog-close color="warn">Cerrar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+

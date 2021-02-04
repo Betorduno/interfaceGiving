@@ -1,0 +1,21 @@
+.menu{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  background-color:  #00adf0;
+}
+.containerTable {
+  padding: 20px;
+}
+
+#createBtn {
+  background-color: #00adf0;
+  margin: 12px 0px;
+}
+.tableStyle {
+  width: 100%;
+  background-color: #c7c1c120;
+}

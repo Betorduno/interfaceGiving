@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Actualizar contrato</h1>
+<div mat-dialog-content>
+  <form [formGroup]="serviceForm.form" (ngSubmit)="updateRegister()" class="normal-form">
+    <div class="controlers-container">
+      <mat-form-field>
+        <input  [(ngModel)]="tipo_id" formControlName="tipo_id" type="number"  matInput placeholder="Tipo de id">
+        <mat-error>EL tipo de ID es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input  [(ngModel)]="id"  formControlName="id" type="number" matInput placeholder="ID">
+        <mat-error>EL ID es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input  [(ngModel)]="nombre" formControlName="nombre" matInput placeholder="Nombres">
+        <mat-error>EL nombre es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input  [(ngModel)]="apellido" formControlName="apellido" matInput placeholder="Apellidos">
+        <mat-error>EL apellido es requerido.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input  [(ngModel)]="edad" formControlName="edad" type="number" min="1" matInput placeholder="Edad">
+        <mat-error>La edad es requerida.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input  [(ngModel)]="cat" formControlName="cat" matInput placeholder="Categoria">
+        <mat-error>la categoria es requerida.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input  [(ngModel)]="cargo" formControlName="cargo" matInput placeholder="Cargo">
+        <mat-error>El cargo es requerido.</mat-error>
+      </mat-form-field>
+      <div class="buttom-row">
+        <button mat-raised-button color="primary" type="submit" [disabled]="serviceForm.form.invalid">Actualizar contract</button>
+        <button mat-raised-button mat-button mat-dialog-close color="warn">Cerrar</button>
+      </div>
+    </div>
+  </form>
+</div>
+

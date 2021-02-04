@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+div.container {
+  margin-bottom: 40px;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+form.normal-form {
+  margin: 10px;
+}
+
+.controlers-container > * {
+  width: 100%;
+  padding: 2px 0px;
+}
+
+.buttom-row {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8px 0px;
+}
+.buttom-row > button {
+  margin: 2px;
+  width: 80%;
+}
+html, body {
+  margin: auto;
+  padding: 0;
+}
