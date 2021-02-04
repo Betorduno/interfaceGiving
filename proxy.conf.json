@@ -1,6 +1,6 @@
 {
   "/api/*": {
-    "target":"https://servergiving.herokuapp.com",
+    "target":"https://servergiving.herokuapp.com/",
     "secure": false,
     "logLevel":"debug",
     "changeOrigin":true
